@@ -189,7 +189,7 @@ const PasswordGenerator = () => {
                   onCheckedChange={(checked) => updateOption('includeSymbols', !!checked)}
                 />
                 <Label htmlFor="symbols" className="text-sm">
-                  Symbols (!@#$...)
+                  Symbols (@!#%&*?)
                 </Label>
               </div>
             </div>

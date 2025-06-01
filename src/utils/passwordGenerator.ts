@@ -17,7 +17,7 @@ export const generateSecurePassword = (options: PasswordOptions): string => {
   const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const lowercase = "abcdefghijklmnopqrstuvwxyz";
   const numbers = "0123456789";
-  const symbols = "!@#$%^&*()_+-=[]{}|;:,.<>?";
+  const symbols = "@!#%&*?"; // Only the specified symbols
   
   // Similar characters to exclude if option is enabled
   const similarChars = "il1Lo0O";
