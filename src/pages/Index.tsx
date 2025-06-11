@@ -94,6 +94,9 @@ const Index = () => {
           <p className="text-xs text-muted-foreground">
             Built with enterprise-grade security standards • Open source technology • Trusted by security professionals
           </p>
+          <p className="text-sm font-medium text-muted-foreground mt-4">
+            BY Vineet Demla
+          </p>
         </footer>
       </div>
     </div>
