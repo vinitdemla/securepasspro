@@ -4,7 +4,7 @@ import PasswordGenerator from '@/components/PasswordGenerator';
 import KeywordPasswordGenerator from '@/components/KeywordPasswordGenerator';
 import SecurityTips from '@/components/SecurityTips';
 import { Button } from '@/components/ui/button';
-import { Shield, Key, Sparkles } from 'lucide-react';
+import { Shield, Key, Sparkles, Heart } from 'lucide-react';
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState<'random' | 'keyword'>('random');
@@ -70,7 +70,7 @@ const Index = () => {
         </div>
         
         {/* Enhanced Footer */}
-        <footer className="text-center mt-12 md:mt-16 space-y-4">
+        <footer className="text-center mt-12 md:mt-16 space-y-6">
           <div className="bg-card border rounded-lg p-6 max-w-3xl mx-auto shadow-sm">
             <h3 className="font-semibold text-lg mb-3 flex items-center justify-center gap-2">
               <Shield className="text-green-500" size={20} />
@@ -91,12 +91,30 @@ const Index = () => {
               </div>
             </div>
           </div>
+          
           <p className="text-xs text-muted-foreground">
             Built with enterprise-grade security standards • Open source technology • Trusted by security professionals
           </p>
-          <p className="text-sm font-medium text-muted-foreground mt-4">
-            BY Vineet Demla
-          </p>
+          
+          {/* Beautiful "Built By Vineet Demla" Section */}
+          <div className="relative">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-gradient-to-r from-transparent via-border to-transparent"></div>
+            </div>
+            <div className="relative flex justify-center">
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 px-6 py-3 rounded-full border border-border/50 shadow-sm">
+                <div className="flex items-center gap-2 text-base font-semibold">
+                  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    Built with
+                  </span>
+                  <Heart className="text-red-500 animate-pulse" size={16} />
+                  <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                    by Vineet Demla
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </footer>
       </div>
     </div>
